@@ -1,0 +1,489 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>COSC 488: Introduction to Information Retrieval - Nazli Goharian</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Nazli Goharian">
+<meta property="og:title" content="COSC 488: Introduction to Information Retrieval">
+
+
+  <link rel="canonical" href="http://localhost:4000/teaching/488">
+  <meta property="og:url" content="http://localhost:4000/teaching/488">
+
+
+
+  <meta property="og:description" content="Success Story:">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2018-03-11T15:40:21-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Nazli Goharian",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Nazli Goharian Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Nazli Goharian</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/bio/">Full Bio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/contact/">Contact</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="Nazli Goharian">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Nazli Goharian</h3>
+    <p class="author__bio">Clinical Professor, Information Retrieval, Natural Language Processing, Text mining</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Georgetown University</li>
+      
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Washington DC, USA</li>
+      
+      
+      
+        <li><a href="mailto:nazli@ir.cs.georgetown.edu"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=b3tUsfEAAAAJ"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://www.semanticscholar.org/author/Nazli-Goharian/1685063"><i class="ai ai-orcid-square ai-fw"></i> SemanticScholar</a></li>
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="COSC 488: Introduction to Information Retrieval">
+    <meta itemprop="description" content="Success Story:">
+    <!-- <meta itemprop="datePublished" content="March 11, 2018"> -->
+    <!--  -->
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">COSC 488: Introduction to Information Retrieval
+</h1>
+          <!--  -->
+        <!--  -->
+
+        <!-- 
+          <p> Graduate and Upperclass Undergraduate, <i></i>, 2018 </p> -->
+        <!--  -->
+
+
+        
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="success-story">Success Story:</h2>
+
+<p>Developed the course by NSF support at Information Retrieval Lab &amp; evaluated for 3 consecutive years! Taught the course since 2001 (17 times). The course is regularly updated. Students finishing this course successfully have found jobs at Microsoft, Google, Yahoo, Facebook, Amazon, ,…etc..</p>
+
+<h2 id="course-description">Course Description:</h2>
+
+<p>Information retrieval is the identification of textual components, be them web pages, blogs, microblogs, documents, medical transcriptions, mobile data, or other big data elements, relevant to the needs of the user. Relevancy is determined either as a global absolute or within a given context or view point. Practical, but yet theoretically grounded, foundational and advanced algorithms needed to identify such relevant components are taught. The Information-retrieval techniques and theory, covering both effectiveness and run-time performance of information-retrieval systems are covered. The focus is on algorithms and heuristics used to find textual components relevant to the user request and to find them fast. The course covers the architecture and components of the search engines such as parser, index builder, and query processor. In doing this, various retrieval models, relevance ranking, evaluation methodologies, and efficiency considerations will be covered. The students learn the material by building a prototype of such a search engine. These approaches are in daily use by all search and social media companies.</p>
+
+<h2 id="prerequisite">Prerequisite:</h2>
+
+<p>Data Structure and comfortable Programming knowledge.</p>
+
+<h2 id="recommanded-texts">Recommanded Texts:</h2>
+
+<ul>
+  <li>C. Manning, P. Raghavan, H. Schutze, Introduction to Information Retrieval, Cambridge Publisher, 2008, ISBN: 978-0-521-86571-5; http://nlp.Stanford.edu/IR-book/</li>
+</ul>
+
+<h2 id="handouts">Handouts:</h2>
+
+<p>The course handouts will be available on the class Forum for most topics that are covered in the class.</p>
+
+<h2 id="grading--due-dates-tentative--will-be-finalized-by-the-1st-day-of-the-class">Grading &amp; Due Dates (Tentative- Will be finalized by the 1st day of the class!):</h2>
+
+<p>Project</p>
+
+<p>40%</p>
+
+<p>3-4 projects (Incrementally building the engine). Any programming language may be used (your choice). The projects require design and implementation of various components of a search engine per the assignment requirements, performing experimentations, and analysis. Deliverables for each project part include (detail will be specified when project is given): Cover Page,Design document,Software,Results &amp; Analysis,and [potentially] Demo. Projects are individual (solo) tasks.</p>
+
+<p>Research Presentation</p>
+
+<p>8%</p>
+
+<p>Students must attend all presentations. A pool of papers will be made available and students will be asked to pick several choices, one of which will be finalized for student to present in the class. Will be announced if this assignment is an individual / solo or a group assignment!</p>
+
+<p>Exams ( 2-3 exams )</p>
+
+<p>52%</p>
+
+<h2 id="course-outline-tentative">Course Outline (Tentative!):</h2>
+
+<p>Slides</p>
+
+<p>Introduction, Overview of IR</p>
+
+<p>IR Utilities: Parser/Tokenizer, phrase Recognition, Stemming, N-Grams</p>
+
+<p>Efficiency: Indexing</p>
+
+<p>IR Models: Boolean, Vector Space Model; Similarity Measures</p>
+
+<p><a href="ir-Slides/Boolean-VectorSpace-13.pdf"></a></p>
+
+<p>IR Models: Probablistic Model</p>
+
+<p><a href="ir-Slides/Probablistic-13.pdf"></a></p>
+
+<p>IR Models: Language Model &amp; Topic Model</p>
+
+<p><a href="ir-Slides/LanguageModel-13.pdf"></a></p>
+
+<p>Relational Approach</p>
+
+<p><a href="ir-Slides/Relational-Approach-13"></a></p>
+
+<p>IR Evaluation</p>
+
+<p><a href="ir-Slides/Evaluation-13.pdf"></a></p>
+
+<p>IR Utility: Passage Based Retrieval</p>
+
+<p><a href="ir-Slides/PassageBased-Retrieval-13.pdf"></a></p>
+
+<p>IR Utility: Relevance Feedback and other Query Expansions</p>
+
+<p>Efficiency : Compression</p>
+
+<p>Efficiency: Top Docs, Query Threshold</p>
+
+<p>Clustering</p>
+
+<p><a href="ir-Slides/Clustering-13.pdf"></a></p>
+
+<p>Web Search Ranking</p>
+
+<p><a href="ir-Slides/WebSearchRanking-13.pdf"></a></p>
+
+<p>Peer-to-Peer Search</p>
+
+<p><a href="ir-Slides/P2P-11.pdf"></a></p>
+
+<p>Intro to Text Classification</p>
+
+<p><a href="ir-Slides/COSC488-text-classification-13.pdf"></a></p>
+
+<p>Web Personalization and Recommender Systems</p>
+
+<p><a href="ir-Slides/CollaborativeFiltering-RecSystems-13.pdf"></a></p>
+
+<p>Research Paper Presentations</p>
+
+<p>Students Presentations</p>
+
+<h2 id="late-assignment-policy">Late Assignment Policy:</h2>
+
+<p>Will be posted on the syllabus that will be given to the class by the 1st day of the class.</p>
+
+<h2 id="academic-integrity">Academic Integrity:</h2>
+
+<p>Visit the Honor System Website at http://gervaseprograms.georgetown.edu/honor/</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      <!-- 
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/teaching/488" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/teaching/488" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/teaching/488" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/teaching/488" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section> -->
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/teaching/285" class="pagination--pager" title="COSC 285: Data Mining
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/teaching/586" class="pagination--pager" title="COSC 586: Text Mining and Analysis
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    </script>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Nazli Goharian. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

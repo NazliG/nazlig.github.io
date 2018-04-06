@@ -1,0 +1,19 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+{% include base_path %}
+
+<!-- {% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %} -->
+<ul>
+  {% for post in site.teaching reversed%}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,479 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>COSC 280: Introduction to Database - Nazli Goharian</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Nazli Goharian">
+<meta property="og:title" content="COSC 280: Introduction to Database">
+
+
+  <link rel="canonical" href="http://localhost:4000/teaching/280">
+  <meta property="og:url" content="http://localhost:4000/teaching/280">
+
+
+
+  <meta property="og:description" content="Course Description:">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2018-03-11T15:40:21-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Nazli Goharian",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Nazli Goharian Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Nazli Goharian</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/bio/">Full Bio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/contact/">Contact</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="Nazli Goharian">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Nazli Goharian</h3>
+    <p class="author__bio">Clinical Professor, Information Retrieval, Natural Language Processing, Text mining</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Georgetown University</li>
+      
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Washington DC, USA</li>
+      
+      
+      
+        <li><a href="mailto:nazli@ir.cs.georgetown.edu"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=b3tUsfEAAAAJ"><i class="ai ai-google-scholar-square ai-fw"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://www.semanticscholar.org/author/Nazli-Goharian/1685063"><i class="ai ai-orcid-square ai-fw"></i> SemanticScholar</a></li>
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="COSC 280: Introduction to Database">
+    <meta itemprop="description" content="Course Description:">
+    <!-- <meta itemprop="datePublished" content="March 11, 2018"> -->
+    <!--  -->
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">COSC 280: Introduction to Database
+</h1>
+          <!--  -->
+        <!--  -->
+
+        <!-- 
+          <p> Undergraduate, <i></i>, 2018 </p> -->
+        <!--  -->
+
+
+        
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="course-description">Course Description:</h2>
+
+<p>The focus of the course is covering fundamental database concepts in the relational database management system (RDBMS) on the subjects: relational data modeling and design, abstract relational languages, and structured query language (SQL). Students design and implement a database application for their project. Few sessions are allocated to provide a general overview of several topics such as integrating structured data and text, query optimization, recovery, concurrency control, data warehousing, and data mining.</p>
+
+<h2 id="course-goals---students-should-be-able-to">Course Goals - Students should be able to:</h2>
+
+<ul>
+  <li>
+    <p>Design and model a design scenario using relational data modeling, which includes:</p>
+  </li>
+  <li>Analyze the design anomalies.</li>
+  <li>Construct Entity Relationship Diagram.</li>
+  <li>Analyze and Construct Functional Dependencies for the business rules.</li>
+  <li>Analyze Functional Dependencies to identify Primary keys.</li>
+  <li>Analyze and Perform Normalization and Normal Forms.</li>
+  <li>Define referential integrities.</li>
+  <li>
+    <p>Create relational database design schemas in 3-NF/BCNF for a design scenario of the size of ca. 8-10 tables.</p>
+  </li>
+  <li>Solve abstract relational language, such as relational algebra problems.</li>
+  <li>Solve database transactions by using Structured Query Language (SQL), used by RDBMSs.</li>
+  <li>Explain the general concept of the additional topics such as: Query Optimizations, Concurrency Control, Recovery, structured data and text, and data warehousing.</li>
+  <li>Implement a relational database application. This includes both the design and the implementation of an application that uses a relational database management system for the storage of the data and provides a user interface for the insertion, deletion, update and query of the data in this database by a user.</li>
+</ul>
+
+<h2 id="prerequisite">Prerequisite:</h2>
+
+<p>COSC-072</p>
+
+<h2 id="course-announcements-discussion-board-class-notes">Course Announcements/ Discussion Board/ Class Notes:</h2>
+
+<p>Located on the blackboard!</p>
+
+<h2 id="textbook">Textbook:</h2>
+
+<p>You should have one of these textbooks– your choice to choose! Both are very good books:</p>
+
+<ul>
+  <li>Silberschatz, H.F. Korth, and S. Sudarshan, Database System Concepts, McGraw-Hill, ISBN 0-07-295886-3</li>
+  <li>R. Ramakrishnan and J. Gehrke, Database Management Systems, McGraw-Hill, ISBN 0-07-246563-8 0072283637</li>
+</ul>
+
+<h2 id="grading-tentative-will-be-finalized-by-the-1st-day-of-the-class">Grading (Tentative-will be finalized by the 1st day of the class!)</h2>
+
+<p>Project</p>
+
+<p>34%</p>
+
+<p>A final demo of the project will be given to me.</p>
+
+<p>Assignments</p>
+
+<p>16%</p>
+
+<p>SQL HW (8%)</p>
+
+<p>Design HW (8%)</p>
+
+<p>Information will be on Blackboard!</p>
+
+<p>Exams</p>
+
+<p>50%</p>
+
+<p>Two or Three Exams. Detail will be announced in the class! Exam Dates: TBD - will be announced in the class and on the Blackboard as the semester progresses. NO makeup exams will be given if you do not show up in the exams, unless it has been an emergency health related matter, in which case you need to bring me a doctor note and contact me ASAP! !!</p>
+
+<p>Date: TBA</p>
+
+<h2 id="project">Project:</h2>
+
+<p>Students are given the system description and requirements of an enterprise and asked to design the system, document the design, create the database, implement the business requirements, user queries and database transactions, and a user interface for the application. The interface is used for the user to insert data, delete data, update data and finally query data. Deliverables include a is database design document, test document, and the software. Students are required to give a demonstration of their working application by the project due date. The detailed description of the group project will be provided in a separate handout. Students are required to use a commercial or open source RDBMS (needs to be discussed with me) for the back-end of their database application. Any programming language may be used.</p>
+
+<h2 id="course-content-tentative">Course Content (Tentative):</h2>
+
+<p>TOPICS</p>
+
+<p>SLIDES</p>
+
+<p>Introduction</p>
+
+<p>Introduction to Relational Model</p>
+
+<p>Relational Algebra</p>
+
+<p>Structured Query Language (SQL)</p>
+
+<p>Relational Database Design (ERD, Functional Dependency, Refrential Integrity, Normalization,…)</p>
+
+<p>Integration of Structured Data and Text</p>
+
+<p>Overview of: Query Optimization, Recovery, Concurrency Control</p>
+
+<p>Overview of Data Warehousing &amp; Data Mining</p>
+
+<h2 id="late-assignment-policy">Late Assignment Policy:</h2>
+
+<p>Assignments MUST be submitted on or before their due date. No late assignment will be assigned a grade.In fact the grade for a late submission will be a zero! Please try not to ask for an extension as no extension will be awarded. If you are not able to finish your assignment by the due date and time, simply submit whatever of the assignment you have done to get some points rather than a zero. The students are encouraged to re-work on the incomplete assignments. This does not change the grade for that assignment, however will be considered if the final grade is in border-line.</p>
+
+<h2 id="academic-integrity">Academic Integrity:</h2>
+
+<p>Visit the Honor System Website at http://gervaseprograms.georgetown.edu/honor/</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      <!-- 
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/teaching/280" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/teaching/280" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/teaching/280" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/teaching/280" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section> -->
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/teaching/016" class="pagination--pager" title="COSC 016: Information Systems for non-CS majors
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/teaching/285" class="pagination--pager" title="COSC 285: Data Mining
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    </script>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Nazli Goharian. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

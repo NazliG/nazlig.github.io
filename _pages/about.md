@@ -10,7 +10,9 @@ redirect_from:
 
 ### Bio
 
-I am a Clinical Professor in the Computer Science Department at [Georgetown University](www.georgetown.edu), and also the associate director of the [Information Retrieval Lab (IRLab)](http://ir.cs.georgetown.edu).
+Nazli Goharian is a Clinical Professor in the Computer Science Department at [Georgetown University](www.georgetown.edu), and also the associate director of the [Information Retrieval Lab (IRLab)](http://ir.cs.georgetown.edu). She is currently doing research in the areas of information retrieval, natural language processing and text mining. She has over 60 refereed conference and journal publications. She has won several awards in research and teaching including the EMNLP 2017 “Best Long Paper Award”, "College of Science and Letters Dean’s Excellence Award in Teaching", and "IIT Julia Beveridge Award for faculty" (female faculty of the year). 
+
+
 
 ### Research
 
